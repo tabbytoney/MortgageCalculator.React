@@ -1,7 +1,8 @@
 import React from 'react';
+import { SliderComponent } from './reused/SliderComponent';
 
 const SliderSelect = () => {
-  return <div>Slider Select</div>;
+  return <SliderComponent />;
 };
 
 export default SliderSelect;
