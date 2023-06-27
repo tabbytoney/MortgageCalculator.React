@@ -5,14 +5,35 @@ const SliderSelect = () => {
   return (
     <>
       <SliderComponent
+        label='Home Value'
         min={0}
-        max={50}
+        max={250}
         defaultValue={20}
         step={5}
         onChange={(e, value) => console.log(value)}
+        unit='$'
+        amount={3000}
       />
-      {/* <SliderComponent min={100} max={200} defaultValue={150} />
-      <SliderComponent min={0} max={10} defaultValue={3} /> */}
+      <SliderComponent
+        label='Down Payment'
+        min={0}
+        max={150}
+        defaultValue={50}
+        step={5}
+        onChange={(e, value) => console.log(value)}
+        unit='$'
+        amount={500}
+      />
+      <SliderComponent
+        label='Loan Amount'
+        min={0}
+        max={1250}
+        defaultValue={20}
+        step={5}
+        onChange={(e, value) => console.log(value)}
+        unit='$'
+        amount={1250}
+      />
     </>
   );
 };
