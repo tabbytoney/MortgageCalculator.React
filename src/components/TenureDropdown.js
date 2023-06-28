@@ -19,12 +19,11 @@ const TenureDropdown = ({ data, setData }) => {
         label='Tenure'
         onChange={handleChange}
       >
-        <MenuItem value={5}>Five</MenuItem>
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={15}>Fifteen</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={25}>Twenty-Five</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
+        <MenuItem value={10}>10</MenuItem>
+        <MenuItem value={15}>15</MenuItem>
+        <MenuItem value={20}>20</MenuItem>
+        <MenuItem value={25}>25</MenuItem>
+        <MenuItem value={30}>30</MenuItem>
       </Select>
     </FormControl>
   );

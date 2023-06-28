@@ -22,7 +22,7 @@ const SliderSelect = ({ data, setData }) => {
           })
         }
         unit='$'
-        amount={data.homeValue}
+        amount={data.homeValue.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
       />
       <SliderComponent
         label='Down Payment'
@@ -38,7 +38,7 @@ const SliderSelect = ({ data, setData }) => {
           })
         }
         unit='$'
-        amount={data.downPayment}
+        amount={data.downPayment.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
       />
       <SliderComponent
         label='Loan Amount'
@@ -54,14 +54,14 @@ const SliderSelect = ({ data, setData }) => {
           })
         }
         unit='$'
-        amount={data.loanAmount}
+        amount={data.loanAmount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
       />
       <SliderComponent
         label='Interest Rate'
         min={2}
-        max={12}
+        max={10}
         defaultValue={data.interestRate}
-        step={2}
+        step={0.5}
         onChange={(e, value) => setData({ ...data, interestRate: value })}
         unit='%'
         amount={data.interestRate}
