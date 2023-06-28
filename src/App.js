@@ -36,7 +36,7 @@ function App() {
             <TenureDropdown data={data} setData={setData} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <ResultGraph />
+            <ResultGraph data={data} setData={setData} />
           </Grid>
         </Grid>
       </Container>
